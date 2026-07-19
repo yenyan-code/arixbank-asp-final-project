@@ -1,0 +1,98 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true"
+    CodeBehind="Reports.Master.cs"
+    Inherits="ASP_Final_Project.ReportsMaster" %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+
+    <!-- Browser title -->
+    <title>ArixBank Reports</title>
+
+    <!-- Shared site stylesheet -->
+    <link href="<%= ResolveUrl("~/Pages/css/Site.css") %>" rel="stylesheet" />
+
+    <!-- Reports-specific stylesheet -->
+    <link href="<%= ResolveUrl("~/Pages/css/ReportsMaster.css") %>" rel="stylesheet" />
+
+    <!-- Child page head content -->
+    <asp:ContentPlaceHolder ID="head" runat="server" />
+
+</head>
+<body>
+
+    <!-- Main ASP.NET form -->
+    <form runat="server">
+
+        <!-- TOP NAVIGATION -->
+        <nav class="navbar">
+
+            <!-- Brand/logo -->
+            <div class="brand">
+                <img src="<%= ResolveUrl("~/Pages/Img/logo.png") %>" />
+                <span>ArixBank</span>
+            </div>
+
+            <!-- Main navigation links -->
+            <div class="nav-links">
+                <a href="<%= ResolveUrl("~/Pages/Dashboard.aspx") %>">Dashboard</a>
+                <a href="<%= ResolveUrl("~/Pages/Transfer.aspx") %>">Transfer</a>
+                <a href="<%= ResolveUrl("~/Pages/Deposit.aspx") %>">Deposit</a>
+                <a href="<%= ResolveUrl("~/Pages/Withdraw.aspx") %>">Withdraw</a>
+                <a class="active" href="<%= ResolveUrl("~/Pages/StatementAccount.aspx") %>">Reports</a>
+                <a href="<%= ResolveUrl("~/Pages/Settings.aspx") %>">Settings</a>
+            </div>
+
+            <!-- Logout button -->
+            <asp:Button
+                ID="btnLogout"
+                runat="server"
+                Text="Log out"
+                CssClass="logout-btn"
+                OnClick="BtnLogout_Click" />
+
+        </nav>
+
+        <!-- REPORTS PAGE LAYOUT -->
+        <div class="reports-layout">
+
+            <!-- LEFT SIDEBAR -->
+            <aside class="reports-sidebar">
+
+                <!-- Statement page -->
+                <a id="lnkStatement"
+                    runat="server"
+                    href="~/Pages/StatementAccount.aspx"
+                    class="report-link">
+                    Statement of Account
+                </a>
+
+                <!-- Deposits / Withdrawals page -->
+                <a id="lnkDeposits"
+                    runat="server"
+                    href="~/Pages/DepositsWithdrawals.aspx"
+                    class="report-link">
+                    Deposits & Withdrawals
+                </a>
+
+                <!-- Sent / Received page -->
+                <a id="lnkSent"
+                    runat="server"
+                    href="~/Pages/SentReceived.aspx"
+                    class="report-link">
+                    Sent & Received
+                </a>
+
+            </aside>
+
+            <!-- Child page content -->
+            <main class="reports-content">
+                <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+            </main>
+
+        </div>
+
+    </form>
+
+</body>
+</html>

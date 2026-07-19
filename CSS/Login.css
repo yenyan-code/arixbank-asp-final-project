@@ -1,0 +1,156 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #cfdfc8;
+}
+
+/* FULL PAGE CENTERED WRAPPER */
+.page-wrapper {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* WHITE CARD */
+.login-card {
+    width: 520px;
+    background: #ffffff;
+    border-radius: 40px;
+    padding: 50px 55px 45px;
+    text-align: center;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+}
+
+/* LOGO */
+.logo {
+    width: 90px;
+    height: 90px;
+    display: block;
+    margin: 0 auto 16px;
+    border-radius: 18px;
+}
+
+/* BRAND NAME */
+.brand-name {
+    font-size: 36px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 4px;
+}
+
+/* SUBTITLE */
+.sub-title {
+    font-size: 18px;
+    color: #444;
+    margin-bottom: 30px;
+}
+
+/* INPUT GROUP */
+.input-group {
+    text-align: left;
+    margin-bottom: 18px;
+}
+
+    .input-group label {
+        display: block;
+        font-size: 14px;
+        color: #333;
+        margin-bottom: 7px;
+        margin-left: 5px;
+    }
+
+/* NORMAL INPUT */
+.input-box {
+    width: 100%;
+    height: 48px;
+    background: #e8ede4;
+    border: none;
+    border-radius: 30px;
+    padding: 0 20px;
+    font-size: 15px;
+    color: #333;
+    outline: none;
+    display: block;
+    box-sizing: border-box;
+}
+
+/* PASSWORD WRAPPER */
+.password-wrap {
+    position: relative;
+    width: 100%;
+    display: block;
+}
+
+/* password textbox */
+.password-box {
+    width: 100%;
+    padding-right: 75px;
+}
+
+/* SHOW/HIDE */
+.toggle-password {
+    position: absolute;
+    right: 22px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 13px;
+    font-weight: bold;
+    color: #111;
+    cursor: pointer;
+    user-select: none;
+    z-index: 2;
+}
+
+/* ERROR */
+.error-msg {
+    display: block;
+    min-height: 18px;
+    color: #cc0000;
+    font-size: 13px;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+/* BUTTON */
+.btn-login {
+    width: 65%;
+    height: 52px;
+    background: #1e6e24;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    display: block;
+    margin: 10px auto 0;
+}
+
+    .btn-login:hover {
+        background: #175c1c;
+    }
+
+/* FOOTER */
+.footer-text {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #555;
+}
+
+.register-link {
+    color: #111;
+    font-weight: 700;
+    text-decoration: none;
+    margin-left: 4px;
+}
+
+    .register-link:hover {
+        text-decoration: underline;
+    }

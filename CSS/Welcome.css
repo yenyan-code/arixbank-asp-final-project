@@ -1,0 +1,38 @@
+﻿body {
+    background-image: url('../Images/Home.png');
+    background-size: cover; /* Scales the image to fill the screen */
+    background-position: center; /* Keeps the eagle/text centered */
+    background-repeat: no-repeat; /* Prevents the image from tiling */
+    height: 100vh; /* Makes sure the body takes full height */
+    margin: 0; /* Removes default browser spacing */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    text-align: center;
+    width: 100%;
+    /* This margin-top pushes the buttons down to align 
+       with the "Yes, I am" text in your image */
+    margin-top: 330px;
+}
+
+.btnRegister, .btnLogin {
+    width: 250px; /* Fixed width looks cleaner for buttons */
+    height: 60px;
+    background: #0b6e1c;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    margin: 0 120px; /* Adds space between the two buttons */
+    transition: background 0.3s;
+}
+
+    .btnRegister:hover,
+    .btnLogin:hover {
+        background: #095816;
+    }

@@ -1,0 +1,72 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true"
+    CodeBehind="Site.Master.cs"
+    Inherits="ASP_Final_Project.SiteMaster" %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+
+    <!-- Browser tab title -->
+    <title>ArixBank</title>
+
+    <!-- Main stylesheet shared across pages using Site.Master -->
+    <link href="<%= ResolveUrl("~/Pages/css/Site.css") %>" rel="stylesheet" />
+
+    <!-- Placeholder for page-specific CSS / head content -->
+    <asp:ContentPlaceHolder ID="head" runat="server" />
+
+</head>
+<body>
+
+    <!-- Main ASP.NET form -->
+    <form runat="server">
+
+        <!-- Top navigation bar -->
+        <nav class="navbar">
+
+            <!-- Brand logo and system name -->
+            <div class="brand">
+                <img src="<%= ResolveUrl("~/Pages/Img/logo.png") %>" />
+                <span>ArixBank</span>
+            </div>
+
+            <!-- Navigation menu links -->
+            <div class="nav-links">
+
+                <!-- Dashboard page -->
+                <a id="navDashboard" runat="server" href="~/Pages/Dashboard.aspx">Dashboard</a>
+
+                <!-- Transfer page -->
+                <a id="navTransfer" runat="server" href="~/Pages/Transfer.aspx">Transfer</a>
+
+                <!-- Deposit page -->
+                <a id="navDeposit" runat="server" href="~/Pages/Deposit.aspx">Deposit</a>
+
+                <!-- Withdraw page -->
+                <a id="navWithdraw" runat="server" href="~/Pages/Withdraw.aspx">Withdraw</a>
+
+                <!-- Reports pages -->
+                <a id="navReports" runat="server" href="~/Pages/StatementAccount.aspx">Reports</a>
+
+                <!-- Settings pages -->
+                <a id="navSettings" runat="server" href="~/Pages/Settings.aspx">Settings</a>
+
+            </div>
+
+            <!-- Logout button -->
+            <asp:Button
+                ID="btnLogout"
+                runat="server"
+                Text="Log out"
+                CssClass="logout-btn"
+                OnClick="BtnLogout_Click" />
+
+        </nav>
+
+        <!-- Main content area where child pages render -->
+        <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+
+    </form>
+
+</body>
+</html>

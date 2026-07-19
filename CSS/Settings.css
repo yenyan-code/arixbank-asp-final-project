@@ -1,0 +1,85 @@
+﻿.settings-page {
+    padding: 30px 40px;
+}
+
+    .settings-page h1 {
+        margin: 0;
+        font-size: 52px;
+        line-height: 1;
+        font-weight: 700;
+    }
+
+.subtitle {
+    margin-top: 1px;
+    margin-bottom: 28px;
+    font-size: 16px;
+    color: #555;
+}
+
+.settings-card {
+    width: 620px;
+    margin: 0 auto;
+    background: #045C15;
+    border-radius: 65px;
+    padding: 48px 56px;
+    color: white;
+}
+
+    .settings-card h2 {
+        margin: 0 0 24px;
+        text-align: center;
+        font-size: 30px;
+        font-weight: 600;
+    }
+
+.row {
+    display: flex;
+    gap: 18px;
+}
+
+.field {
+    margin-bottom: 28px;
+}
+
+.field.half {
+    flex: 1;
+}
+
+    .field label {
+        display: block;
+        margin-bottom: 8px;
+        font-size: 14px;
+    }
+
+.input {
+    width: 100%;
+    height: 46px;
+    border: none;
+    outline: none;
+    border-radius: 999px;
+    padding: 0 20px;
+    background: #DCE1D6;
+    font-size: 15px;
+    color: #111;
+}
+
+.input[readonly] {
+    cursor: default;
+}
+
+.btn-wrap {
+    margin-top: 18px;
+    text-align: center;
+}
+
+.change-btn {
+    border: none;
+    background: #9DD44E;
+    color: #111;
+    font-size: 16px;
+    padding: 15px 38px;
+    border-radius: 999px;
+    cursor: pointer;
+    min-width: 240px;
+    font-weight: 500;
+}

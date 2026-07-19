@@ -1,0 +1,25 @@
+# Visual Studio files
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build results
+bin/
+obj/
+[Dd]ebug/
+[Rr]elease/
+
+# NuGet Packages
+packages/
+
+# Roslyn cache
+roslyn/
+
+# Windows
+Thumbs.db
+desktop.ini
+
+# Mac
+.DS_Store

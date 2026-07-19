@@ -1,0 +1,208 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    background: #c9d8c1; /* The light green background */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.register-card {
+    background: white;
+    padding: 40px;
+    border-radius: 50px;
+    width: 550px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    text-align: center;
+}
+
+.header img.logo {
+    width: 100px; /* Slightly larger to match your 'ArixBank' font scale */
+    height: auto;
+    display: block; /* Helps with centering */
+    margin: 0 auto 15px auto; /* Centers horizontally and adds bottom gap */
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+.header p {
+    margin: 5px 0 25px 0;
+    color: #555;
+}
+
+.row {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 15px;
+}
+
+.input-group {
+    flex: 1;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+    .input-group label {
+        display: block;
+        font-size: 14px;
+        margin-bottom: 5px;
+        margin-left: 15px;
+        color: #333;
+    }
+
+.box {
+    width: 100%;
+    height: 45px;
+    border: none;
+    border-radius: 25px;
+    background: #e4eadf;
+    padding: 0 20px;
+    box-sizing: border-box; /* Crucial for width calculation */
+    font-size: 16px;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.btnRegister {
+    width: 80%;
+    height: 55px;
+    background: #19761f;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.footer-text {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.logo {
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.1); /* Subtle grow effect when you hover over the bank logo */
+ }
+
+.loginLink {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.msg {
+    display: block;
+    color: #d93025; /* A more professional 'Bank Red' */
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.success-panel {
+    text-align: center;
+    animation: fadeIn .35s ease;
+}
+
+.success-title {
+    color: #19761f;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.success-text {
+    color: #444;
+    font-size: 16px;
+    margin-bottom: 18px;
+    line-height: 1.5;
+}
+
+.account-number-box {
+    background: #eef7ea;
+    border: 2px dashed #19761f;
+    border-radius: 20px;
+    padding: 18px;
+    font-size: 28px;
+    font-weight: 700;
+    color: #19761f;
+    letter-spacing: 2px;
+    margin: 20px 0;
+}
+
+.save-note {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.go-login-btn {
+    display: inline-block;
+    width: 80%;
+    padding: 16px 0;
+    background: #19761f;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: .25s;
+}
+
+    .go-login-btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 10px 18px rgba(0,0,0,.08);
+    }
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#btnGoLogin {
+    margin-top: 10px;
+}
+
+/* PASSWORD SHOW/HIDE */
+.password-wrap {
+    position: relative;
+    width: 100%;
+    display: block;
+}
+
+    .password-wrap .box {
+        display: block;
+        width: 100%;
+        height: 45px;
+        padding-right: 85px;
+        box-sizing: border-box;
+    }
+
+.toggle-password {
+    position: absolute;
+    right: 18px;
+    top: 22px; /* fixed vertical center */
+    transform: translateY(-50%);
+    font-size: 13px;
+    font-weight: 700;
+    color: #111;
+    cursor: pointer;
+    user-select: none;
+    z-index: 99;
+}

@@ -1,0 +1,178 @@
+﻿* {
+    box-sizing: border-box;
+}
+
+/* PAGE */
+.transfer-page {
+    display: grid;
+    grid-template-columns: 1.6fr 0.95fr;
+    gap: 28px;
+    padding: 20px 35px 35px;
+    align-items: start;
+}
+
+/* LEFT */
+.transfer-left h1 {
+    margin: 0;
+    font-size: 52px;
+    line-height: 1;
+    font-weight: 700;
+}
+
+.subtitle {
+    margin: 8px 0 20px;
+    font-size: 16px;
+    color: #555;
+}
+
+/* FORM CARD */
+.transfer-form {
+    background: #045C15;
+    border-radius: 40px;
+    padding: 25px;
+    min-height: 0px;
+    color: white;
+}
+
+.section-label {
+    font-size: 17px;
+    margin-bottom: 10px;
+    letter-spacing: .5px;
+}
+
+.row.two {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+}
+
+.line {
+    height: 1px;
+    background: rgba(255,255,255,.45);
+    margin: 18px 0;
+}
+
+/* INPUTS */
+.pill-input {
+    width: 100%;
+    height: 55px;
+    border: none;
+    outline: none;
+    border-radius: 999px;
+    padding: 0 26px;
+    font-size: 18px;
+    background: #f2f2f2;
+    color: #111;
+}
+
+.full {
+    width: 100%;
+}
+
+/* amount buttons */
+.amount-buttons {
+    display: flex;
+    gap: 16px;
+    margin-top: 16px;
+    margin-left: 40px;
+    flex-wrap: wrap;
+}
+
+.amount-btn {
+    border: none;
+    background: #f2f2f2;
+    color: #666;
+    border-radius: 999px;
+    height: 48px;
+    padding: 0 28px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+/* message */
+.msg {
+    display: block;
+    margin-top: 14px;
+    min-height: 22px;
+    color: #ffd7d7;
+    font-size: 15px;
+}
+
+/* bottom buttons */
+.bottom-buttons {
+    margin-top: -10px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+}
+
+.cancel-btn,
+.send-btn {
+    border: none;
+    border-radius: 999px;
+    height: 52px;
+    padding: 0 38px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.cancel-btn {
+    background: #f2f2f2;
+    color: #111;
+}
+
+.send-btn {
+    background: #a7de5e;
+    color: #111;
+}
+
+/* RIGHT */
+.transfer-right {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+/* balance */
+.balance-card {
+    background: #a7de5e;
+    border-radius: 42px;
+    padding: 24px 32px;
+}
+
+.balance-title {
+    font-size: 22px;
+    margin-bottom: 18px;
+}
+
+.balance-amount {
+    font-size: 58px;
+    font-weight: 700;
+    color: #045c15;
+}
+
+/* rules */
+.rules-card {
+    background: #dce1d6;
+    border-radius: 42px;
+    padding: 32px 36px;
+    min-height: 400px;
+}
+
+    .rules-card h3 {
+        margin: 0 0 25px;
+        font-size: 22px;
+        color: #045c15;
+    }
+
+    .rules-card ul {
+        margin: 0;
+        padding-left: 20px;
+    }
+
+    .rules-card li {
+        margin-bottom: 16px;
+        font-size: 16px;
+        line-height: 1.45;
+        color: #333;
+    }

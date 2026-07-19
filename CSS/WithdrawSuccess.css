@@ -1,0 +1,83 @@
+﻿html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.success-body {
+    min-height: 100vh;
+    background: #dce8d4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+.success-card {
+    width: 470px;
+    background: #f7f7f7;
+    border-radius: 45px;
+    padding: 28px;
+    text-align: center;
+}
+
+.check-wrap {
+    margin-bottom: 20px;
+}
+
+.check-img {
+    width: 95px;
+    height: 95px;
+    object-fit: contain;
+}
+
+.success-card h1 {
+    margin: 0;
+    font-size: 30px;
+    font-weight: 700;
+    color: #111;
+}
+
+.success-msg {
+    margin: 18px 0 28px;
+    font-size: 17px;
+    color: #555;
+    line-height: 1.5;
+}
+
+.receipt-box {
+    background: #dce1d6;
+    border-radius: 28px;
+    padding: 22px;
+    margin-bottom: 22px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 28px;
+    font-size: 18px;
+}
+
+    .row:last-child {
+        margin-bottom: 0;
+    }
+
+    .row strong {
+        font-size: 34px;
+        color: #045C15;
+    }
+
+.return-btn {
+    width: 100%;
+    height: 52px;
+    border: none;
+    border-radius: 999px;
+    background: #A7DE5E;
+    color: #111;
+    font-size: 18px;
+    cursor: pointer;
+}

@@ -1,0 +1,126 @@
+*{
+    box-sizing:border-box;
+}
+
+.dashboard-grid{
+    display:grid;
+    grid-template-columns:2fr 1.15fr;
+    gap:28px;
+    padding:10px 35px 20px;
+    align-items:start;
+}
+
+/* LEFT */
+.left-section{
+    display:flex;
+    flex-direction:column;
+    gap:22px;
+}
+
+.welcome-card{
+    background:#045C15;
+    border-radius:42px;
+    padding:42px 50px;
+    color:white;
+    min-height:470px;
+}
+
+.welcome-text{
+    font-size:30px;
+    margin:0 0 25px;
+}
+
+.full-name {
+    font-size: 72px;
+    font-weight: 700;
+    margin: 45px 0 115px;
+    line-height: 1.05;
+}
+
+.account-info p{
+    font-size:22px;
+    margin:14px 0;
+}
+
+.account-info p {
+    font-size: 22px;
+    margin: 18px 0;
+    line-height: 1.3;
+}
+
+/* SUMMARY CARDS */
+.summary-row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    gap: 20px;
+}
+
+.info-card {
+    width: 50%;
+    flex: 1;
+    background: #A8DE63;
+    border-radius: 36px;
+    padding: 28px 34px;
+    height: 150px;
+    min-width: 0;
+}
+
+.card-title{
+    margin:0 0 12px;
+    font-size:20px;
+    font-weight:500;
+    color:#111;
+}
+
+.amount {
+    margin: 0;
+    font-size: 58px;
+    line-height: 1;
+    font-weight: 700;
+    color: #033F0E;
+}
+
+/* RIGHT */
+
+.notification-card {
+    background: #DCE1D6;
+    border-radius: 42px;
+    padding: 35px;
+    min-height: 640px;
+    height: auto;
+}
+
+.notification-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    font-size:22px;
+    margin-bottom:22px;
+}
+
+.notification-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 18px;
+    padding: 16px 0;
+    border-bottom: 1px solid #a4aa9d;
+}
+
+.notif-message {
+    font-size: 15px;
+    color: #111;
+    flex: 1;
+}
+
+.notif-time {
+    font-size: 14px;
+    color: #444;
+    white-space: nowrap;
+}
+
+.view-all{
+    cursor:pointer;
+}
