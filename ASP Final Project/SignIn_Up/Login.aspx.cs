@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Configuration;
 using System.Data.SqlClient;
 
@@ -99,10 +99,10 @@ namespace ASP_Final_Project.SignIn_Up
                     }
                 }
             }
-            catch
+            catch (Exception ex)
             {
                 // Handle unexpected login/database errors
-                lblMessage.Text = "Login failed.";
+                lblMessage.Text = "Login failed: " + ex.Message;
             }
         }
     }
