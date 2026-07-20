@@ -35,25 +35,25 @@ body {
 }
 
 .logo-img {
-    height: 90px; /* Eagle head logo size */
+    height: 110px; /* Increased eagle head logo size */
     width: auto;
     display: block;
 }
 
 .welcome-title {
-    font-size: 5rem; /* Large headline */
+    font-size: 5.5rem; /* Increased headline size */
     font-weight: 800;
     line-height: 1.1;
     color: #111111;
     letter-spacing: -0.03em;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
 }
 
 .welcome-subtitle {
-    font-size: 1.75rem; /* Subtitle size */
+    font-size: 2rem; /* Increased subtitle size */
     font-weight: 500;
     color: #1a1a1a;
-    margin-bottom: 3.5rem;
+    margin-bottom: 4rem;
     letter-spacing: -0.01em;
 }
 
@@ -63,9 +63,9 @@ body {
 }
 
 .btn-login, .btn-register {
-    height: 60px;
-    border-radius: 30px; /* Pill shapes */
-    font-size: 1.25rem;
+    height: 66px; /* Increased button height */
+    border-radius: 33px; /* Pill shapes */
+    font-size: 1.35rem; /* Increased button text size */
     font-weight: 700;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
@@ -79,7 +79,7 @@ body {
 }
 
 .btn-login {
-    width: 240px;
+    width: 260px; /* Increased button width */
     background-color: #1e6b2c; /* Forest Green fill */
     color: #ffffff;
 }
@@ -90,10 +90,10 @@ body {
 }
 
 .btn-register {
-    width: 240px;
+    width: 260px; /* Increased button width */
     background-color: transparent;
     color: #1e6b2c;
-    border: 2px solid #1e6b2c; /* Forest Green outline */
+    border: 2.5px solid #1e6b2c; /* Slightly thicker outline */
 }
 
 .btn-register:hover {
