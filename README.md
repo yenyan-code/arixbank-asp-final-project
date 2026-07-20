@@ -2,6 +2,9 @@
 
 A web-based banking application built using ASP.NET WebForms, C#, Bootstrap, and SQL Server.
 
+> [!WARNING]  
+> **Educational Project Disclaimer:** This is a student project created for academic purposes. **Do not enter real personal information, actual credit card details, or reuse real-world passwords** on the live demo site.
+
 ## 🌐 Live Demo
 You can view and test the live application here:
 👉 **[http://arixbank.somee.com/SignIn_Up/Welcome.aspx](http://arixbank.somee.com/SignIn_Up/Welcome.aspx)**
@@ -19,10 +22,10 @@ You can view and test the live application here:
 ---
 
 ## 🛠️ Technology Stack
-- **Frontend:** HTML5, CSS3, JavaScript, Bootstrap
+- **Frontend:** HTML5, CSS3, JavaScript (Plus Jakarta Sans modern typography)
 - **Backend:** C# (ASP.NET WebForms)
 - **Database:** MS SQL Server (hosted on Somee)
-- **Server Environment:** Windows Server IIS
+- **Server Environment:** Windows Server IIS (Somee Cloud Hosting)
 
 ---
 
