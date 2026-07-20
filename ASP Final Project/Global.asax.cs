@@ -28,8 +28,8 @@ namespace ASP_Final_Project
                     string host = HttpContext.Current.Request.Url.Host.ToLower();
                     string targetConnString = "";
 
-                    // If running locally, connect to the local MDF file (LocalDB)
-                    if (host.Contains("localhost") || host.Contains("127.0.0.1"))
+                    // If running locally (covers localhost, 127.0.0.1, ::1, and local hostname), connect to LocalDB
+                    if (HttpContext.Current.Request.IsLocal)
                     {
                         targetConnString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\ArixBankDB.mdf;Integrated Security=True";
                     }
