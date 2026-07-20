@@ -23,3 +23,7 @@ desktop.ini
 
 # Mac
 .DS_Store
+
+# SQL Server Databases
+*.mdf
+*.ldf
