@@ -1,38 +1,134 @@
-﻿body {
-    background-image: url('../Images/Home.png');
-    background-size: cover; /* Scales the image to fill the screen */
-    background-position: center; /* Keeps the eagle/text centered */
-    background-repeat: no-repeat; /* Prevents the image from tiling */
-    height: 100vh; /* Makes sure the body takes full height */
-    margin: 0; /* Removes default browser spacing */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #ffffff;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #121212;
 }
 
-.container {
-    text-align: center;
+.welcome-container {
     width: 100%;
-    /* This margin-top pushes the buttons down to align 
-       with the "Yes, I am" text in your image */
-    margin-top: 330px;
+    max-width: 1000px;
+    padding: 0 40px;
+    display: flex;
+    justify-content: flex-start; /* Left-align the main block on the screen */
 }
 
-.btnRegister, .btnLogin {
-    width: 250px; /* Fixed width looks cleaner for buttons */
+.content-box {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Left-align everything inside the content box */
+    text-align: left;
+}
+
+.logo-wrapper {
+    margin-bottom: 2rem;
+}
+
+.logo-img {
+    height: 90px; /* Eagle head logo size */
+    width: auto;
+    display: block;
+}
+
+.welcome-title {
+    font-size: 5rem; /* Large headline */
+    font-weight: 800;
+    line-height: 1.1;
+    color: #111111;
+    letter-spacing: -0.03em;
+    margin-bottom: 1.5rem;
+}
+
+.welcome-subtitle {
+    font-size: 1.75rem; /* Subtitle size */
+    font-weight: 500;
+    color: #1a1a1a;
+    margin-bottom: 3.5rem;
+    letter-spacing: -0.01em;
+}
+
+.button-group {
+    display: flex;
+    gap: 2rem; /* Spacing between the two buttons */
+}
+
+.btn-login, .btn-register {
     height: 60px;
-    background: #0b6e1c;
-    color: white;
-    font-size: 24px;
-    font-weight: bold;
-    border: none;
-    border-radius: 50px;
+    border-radius: 30px; /* Pill shapes */
+    font-size: 1.25rem;
+    font-weight: 700;
     cursor: pointer;
-    margin: 0 120px; /* Adds space between the two buttons */
-    transition: background 0.3s;
+    transition: all 0.2s ease-in-out;
+    outline: none;
+    font-family: inherit;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border: none;
 }
 
-    .btnRegister:hover,
-    .btnLogin:hover {
-        background: #095816;
+.btn-login {
+    width: 240px;
+    background-color: #1e6b2c; /* Forest Green fill */
+    color: #ffffff;
+}
+
+.btn-login:hover {
+    background-color: #175322;
+    transform: translateY(-1px);
+}
+
+.btn-register {
+    width: 240px;
+    background-color: transparent;
+    color: #1e6b2c;
+    border: 2px solid #1e6b2c; /* Forest Green outline */
+}
+
+.btn-register:hover {
+    background-color: #f4faf5;
+    transform: translateY(-1px);
+}
+
+/* Responsive styles for mobile screens */
+@media (max-width: 768px) {
+    .welcome-container {
+        justify-content: center; /* Center on mobile */
+        padding: 0 20px;
     }
+    
+    .content-box {
+        align-items: center; /* Center content on mobile */
+        text-align: center;
+    }
+    
+    .welcome-title {
+        font-size: 3.5rem;
+    }
+    
+    .welcome-subtitle {
+        font-size: 1.35rem;
+        margin-bottom: 2.5rem;
+    }
+    
+    .button-group {
+        flex-direction: column;
+        width: 100%;
+        gap: 1rem;
+    }
+    
+    .btn-login, .btn-register {
+        width: 100%;
+    }
+}
