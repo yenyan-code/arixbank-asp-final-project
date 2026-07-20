@@ -9,17 +9,17 @@ body {
     background-color: #ffffff;
     height: 100vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start; /* Left-align the main block on the screen */
+    align-items: center; /* Center vertically */
+    padding-left: 10%; /* Position content towards the left with a nice margin */
     color: #121212;
 }
 
 .welcome-container {
     width: 100%;
-    max-width: 1000px;
-    padding: 0 40px;
+    max-width: 600px;
     display: flex;
-    justify-content: flex-start; /* Left-align the main block on the screen */
+    justify-content: flex-start;
 }
 
 .content-box {
@@ -103,6 +103,11 @@ body {
 
 /* Responsive styles for mobile screens */
 @media (max-width: 768px) {
+    body {
+        justify-content: center;
+        padding-left: 0;
+    }
+
     .welcome-container {
         justify-content: center; /* Center on mobile */
         padding: 0 20px;
